@@ -10,6 +10,15 @@ Esta versão é relativa ao Angular, para maiores informações favor acessar os
 
 ## Para utilizar o exemplo:
 
-`Clone este projeto`
-`npm install`
-`ng serve --open`
+```bash
+# Clone o repositório
+
+# Acesse o diretório
+cd dir_do_projeto
+
+# Instale as dependencias
+npm install
+
+# Inicie o projeto
+ng serve --open
+```

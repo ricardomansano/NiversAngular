@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* [*Material_UI] O CSS deve ficar aqui para habilitar a animacao dos botoes */
+/* https://stackoverflow.com/questions/44230852/angular-material-could-not-find-angular-material-core-theme */
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+/* [*StyleSheet] Pareando exibição com o React */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  

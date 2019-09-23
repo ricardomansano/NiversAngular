@@ -1,0 +1,33 @@
+<div>
+    <h2>
+        {{this.title}}
+    </h2>
+
+    <!-- [*Form] ngNativeValidate é necessário para manter a validacao padrao de preenchimento -->
+    <form #niverForm="ngForm" ngNativeValidate (ngSubmit)="onClickSubmit($event, niverForm)" >
+      <mat-form-field>
+        <mat-label>Aniversariante</mat-label>
+        <input matInput required type="text" name="person" ngModel>
+      </mat-form-field>
+      {{" "}}
+      <mat-form-field>
+        <mat-label>Niver</mat-label>
+        <input matInput required type="date" name="birthday" ngModel>
+      </mat-form-field>
+      {{" "}}
+
+      <!-- [*CustomButton] Utilizando o CSS no [color] -->
+      <button mat-flat-button [color]="'CustomButton'">INSERIR</button>
+    </form>
+
+    <!-- [*LoopCreation] No Angular o ngFor eh usado pra executar um Loop de criacao de componentes 
+    neste momento usamos criando um componente niver-item para cada item do Vetor nivers-->
+    <niver-item
+      *ngFor="let nivers of this.nivers | keyvalue"
+      idx={{nivers.key}}
+      birthday={{nivers.value.list[0]}}
+      person={{nivers.value.list[1]}}
+    >
+    </niver-item>
+
+  </div>

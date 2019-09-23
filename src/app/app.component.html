@@ -1,0 +1,48 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div id="App">
+    <!-- [*AppBar] -->
+    <mat-toolbar color="primary" style="max-height: 50px; padding: 0;">
+    <div>
+        <button mat-icon-button [matMenuTriggerFor]="mainMenu">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </div>
+    <div style="flex: 1 1 auto; text-align: right;">
+        <button mat-icon-button matTooltip="Home" [routerLink]="['']">
+          <mat-icon>home</mat-icon>
+        </button>
+        <button mat-icon-button matTooltip="Aniversários" 
+          [routerLink]="['nivers']"
+          [queryParams]="{title: 'Nivers'}"> <!-- [*QueryParams] - Passagem de parâmetros via get -->
+          <mat-icon>cake</mat-icon>
+        </button>
+        <button mat-icon-button matTooltip="Hooks - Utiliza Função ao inves de Classe"  [routerLink]="['hooks']">
+          <mat-icon>device_hub</mat-icon>
+        </button>
+    </div>
+  </mat-toolbar>
+
+  <!-- [*MainMenu] -->
+  <!-- https://material.angular.io/components/menu/examples -->      
+  <mat-menu #mainMenu="matMenu">
+    <button mat-menu-item  color="primary" 
+      [routerLink]="['']">
+      <mat-icon>home</mat-icon>Home
+    </button>
+    <button mat-menu-item color="primary"
+      [routerLink]="['nivers']"
+      [queryParams]="{title: 'Nivers'}">
+      <mat-icon>cake</mat-icon>Aniversários
+    </button>
+    <button mat-menu-item color="primary" [routerLink]="['hooks']">
+      <mat-icon>device_hub</mat-icon>Hooks
+    </button>
+  </mat-menu>
+
+  <!-- [*Router] Container do Roteador -->
+  <router-outlet></router-outlet>
+    
+</div>
+  
+

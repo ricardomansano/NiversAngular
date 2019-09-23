@@ -1,0 +1,8 @@
+/* [*CustomButton] Definicao do CSS */
+.mat-CustomButton {
+    color: #fff;
+    background-color: #007bff;
+}
+.mat-CustomButton:hover{
+    background-color: #0069d9;
+}

@@ -12,6 +12,7 @@ Esta versão é relativa ao Angular, para maiores informações favor acessar os
 
 ```bash
 # Clone o repositório
+git clone https://github.com/ricardomansano/NiversAngular.git
 
 # Acesse o diretório
 cd dir_do_projeto

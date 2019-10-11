@@ -25,3 +25,6 @@ npm install
 # Inicie o projeto
 ng serve --open
 ```
+## Image
+
+![](https://raw.githubusercontent.com/ricardomansano/NiversAngular/master/images/PrintAngular_1.png)
